@@ -10,10 +10,10 @@ app.get('/', function(request, response) {
   if (err) {
     response.send('unable to load the file ' + err);
   } else {
-    response.send(data.toString('utf8'));
+    //response.send(data.toString('utf8'));
+    response.send('read the file');
   }
   }
-  response.send('Hello World 2!');
 });
 
 var port = process.env.PORT || 5000;
