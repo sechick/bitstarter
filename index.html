@@ -220,27 +220,85 @@
       </div>
 
 
-
-
-      <div class="row faq">
-        <div class="span12">
-<p>          FAQ: Heikki Lunta was initially a creation of David Riutta, in the 1970s with WMPL radio. Now, the Heikki Lunta story has become global. It reflects the true <a href="http://en.wikipedia.org/wiki/Finnish_paganism#Shamanism">paganism</a> that might be yet to come, and that has been, in northern of Finland.</p>
-
-<p> FAQ: The snow-making powers of Heikki Lunta are well <a href="http://yoopersteez.com/post/heikki-lunta-finnish-snow-god">documented</a>.</p>
-
-
-<p>FAQ: For more information see <a href="http://csumc.wisc.edu/exhibit/HeikkiLunta/bibliography.html">this scholarly document</a>.</p>
-
-
-<p>FAQ: I don't really know how to snowmobile.</p>
-        </div>
+      <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
+      <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
+      <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
+      <div class="row-fluid faq">
+          <div class="span10 offset1">
+            <h3>FAQ</h3>
+            <div class="accordion" id="accordion2">
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="https://spark-public.s3.amazonaws.com/startup/code/bitstarter-hw4.html#collapseOne">
+                    What are the mystical origins of Heikki Lunta?
+                  </a>
+                </div>
+                <div id="collapseOne" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    Heikki Lunta was a creation of David Riutta, in the 1970s with WMPL radio. 
+                    The first song of Heikki Lunta was created to respond to a dearth of snow prior to the snowmobile race.
+                    The first song's great success led to so much snow that the snowmobile race was cancelled. 
+                    The second song is an enchanting ballad of escape from the wrath of those who could not race.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="https://spark-public.s3.amazonaws.com/startup/code/bitstarter-hw4.html#collapseTwo">
+                    Are more people believing in Heikki's message?
+                  </a>
+                </div>
+                <div id="collapseTwo" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    Now, the Heikki Lunta story has become global. It reflects the true <a href="http://en.wikipedia.org/wiki/Finnish_paganism#Shamanism">paganism</a> that might be yet to come, and that has been, in northern of Finland.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="https://spark-public.s3.amazonaws.com/startup/code/bitstarter-hw4.html#collapseTwo">
+                    Is Heikki Lunta really that powerful?
+                  </a>
+                </div>
+                <div id="collapseTwo" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    The snow-making powers of Heikki Lunta are well <a href="http://yoopersteez.com/post/heikki-lunta-finnish-snow-god">documented</a>.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="https://spark-public.s3.amazonaws.com/startup/code/bitstarter-hw4.html#collapseTwo">
+                    Where can I learn more about Heikki Lunta?
+                  </a>
+                </div>
+                <div id="collapseTwo" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    For more information see <a href="http://csumc.wisc.edu/exhibit/HeikkiLunta/">this scholarly document</a>.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="https://spark-public.s3.amazonaws.com/startup/code/bitstarter-hw4.html#collapseTwo">
+                    Must one love to snowmobile to follow Heikki Lunta?
+                  </a>
+                </div>
+                <div id="collapseTwo" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    No, snowmobiling is not a prerequisit. I don't really know how to snowmobile myself.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
       <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
       <!-- http://creativecommons.org/licenses/ -->
       <div class="row-fluid footer">
         <div class="span12">
-          <p> This footer is where we usually put the fancy shmancy copyright stuff. What I mean is that this portion of this web site is for the legal beagle types.</p>
-          <p> This work is licensed under
+          <p> This footer is where we usually put the fancy shmancy copyright stuff. What I mean is that this portion of this web site is for the legal beagle types.  
+          This work is licensed under
             the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
               By-SA 3.0
             </a>, without all the cruft that would otherwise be
