@@ -58,8 +58,36 @@
         font-size: 18px;
         line-height: 24px;
       }
-      .video, .thermometer, .order, .social {
-        border: 1px dotted;
+
+      /* Video pitch and Action */
+      .pitch {
+        padding: 2.5% 0%;
+      }
+      .order {
+        padding: 2% 0%;
+      }
+      .actions {
+        background-color: #343434;
+        padding: 3% 0%;
+      }
+      .video, .thermometer, .order, .social, .statistics {
+        text-align: center;
+      }
+      .statistics h3, .statistics p {
+        color: white;
+      }
+
+      /* Marketing Copy and Footer */
+      .copy {
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+        text-align: justify;
+      }
+      .asset {
+        padding: 2.5% 0%;
+      }
+      .footer {
+        color: #cccccc;
         text-align: center;
       }
       .video {
@@ -117,16 +145,45 @@
         <div class="span12">
           <!-- Special typography from Bootstrap for lead paragraph. -->
           <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-          <p class="lead">The basic point is to support <a href="http://pasty.com/heikki/heikkilunta.html">Heikki Lunta</a>'s attempts to make it snow in time for the snowmobile races.</p>
+          <p class="lead">Let's all support <a href="http://pasty.com/heikki/heikkilunta.html">Heikki Lunta</a>'s attempts to make it snow in time for the snowmobile races.</p>
         </div>
       </div>
       <div class="row-fluid pitch">
         <div class="span5 offset1 video">
           <img class="img-polaroid" src="./My First Bitstarter_files/480x300">
         </div>
-        <div class="span6">
-          <div class="thermometer">
-            Thermometer
+
+        <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
+        <div class="span5 actions">
+          <div class="span8 offset2">
+            <div class="statistics">
+              <div class="span4">
+                <!-- linediv-l and linediv-r give dividing lines that look
+                different in horizontal and vertical layouts, illustrating
+                media queries. -->
+                <div class="linediv-l">
+                <h3>1000</h3> <p>backers</p>
+                </div>
+              </div>
+              <div class="span4">
+                <div class="linediv-c">
+                  <h3>$6000</h3> <p>of $10,000</p>
+                </div>
+              </div>
+              <div class="span4">
+                <div class="linediv-r">
+                <h3>10</h3> <p>days left</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="span10 offset1">
+            <!-- Bootstrap progress bar -->
+            <!-- http://twitter.github.io/bootstrap/components.html#progress -->
+            <div class="thermometer progress active">
+              <div class="bar bar-success" style="width: 60%;"></div>
+              <div class="bar bar-warning" style="width: 40%;"></div>
+            </div>
           </div>
           <div class="order">
             Order
@@ -136,16 +193,35 @@
           </div>
         </div>
       </div>
-      <div class="row section1">
-        <div class="span12">
-          Marketing Section 1: Don't you just hate it when it does not snow? If you are like me, you will want it to snow. Please think carefully about that.
+
+      <!-- Beyond this part the marketing copy begins. -->
+      <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
+      <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
+      <!-- http://placehold.it -->
+      <div class="row-fluid section1">
+        <div class="span5 offset1 asset">
+          <img class="img-polaroid" src="./My First Bitstarter_files/480x300">
+        </div>
+        <div class="span5 copy">
+          <p>
+            Don't you just hate it when it does not snow? If you are like me, you will want it to snow. Please think carefully about that.
+          </p>
         </div>
       </div>
-      <div class="row section2">
-        <div class="span12">
-          Marketing Section 2: Heikki Lunta is really about <a href="http://www.youtube.com/watch?v=cI3wcFiUcko">dancing as part of a civic responsibility</a> initiative so that all may have fun in the snow, and also about <a href="http://www.youtube.com/watch?v=mvb5EnIzi3Y">avoiding getting hit by snowballs that have big rocks</a> in them. Please also see <a href="http://www.youtube.com/watch?v=xHL3-8zPaAU">another perspective</a>.
+      <div class="row-fluid section2">
+        <div class="span5 offset1 copy copy-right">
+          <p>
+            Heikki Lunta is really about <a href="http://www.youtube.com/watch?v=cI3wcFiUcko">dancing as part of a civic responsibility</a> initiative so that all may have fun in the snow, and also about <a href="http://www.youtube.com/watch?v=mvb5EnIzi3Y">avoiding getting hit by snowballs that have big rocks</a> in them. Please also see <a href="http://www.youtube.com/watch?v=xHL3-8zPaAU">another perspective</a>.
+          </p>
+        </div>
+        <div class="span5 asset">
+          <img class="img-polaroid" src="./My First Bitstarter_files/480x300">
         </div>
       </div>
+
+
+
+
       <div class="row faq">
         <div class="span12">
 <p>          FAQ: Heikki Lunta was initially a creation of David Riutta, in the 1970s with WMPL radio. Now, the Heikki Lunta story has become global. It reflects the true <a href="http://en.wikipedia.org/wiki/Finnish_paganism#Shamanism">paganism</a> that might be yet to come, and that has been, in northern of Finland.</p>
@@ -155,12 +231,20 @@
 
 <p>FAQ: For more information see <a href="http://csumc.wisc.edu/exhibit/HeikkiLunta/bibliography.html">this scholarly document</a>.</p>
 
+
 <p>FAQ: I don't really know how to snowmobile.</p>
         </div>
       </div>
-      <div class="row footer">
+      <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
+      <!-- http://creativecommons.org/licenses/ -->
+      <div class="row-fluid footer">
         <div class="span12">
-          This footer is where we usually put the fancy shmancy copyright stuff. What I mean is that this portion of this web site is for the legal beagle types.
+          <p> This footer is where we usually put the fancy shmancy copyright stuff. What I mean is that this portion of this web site is for the legal beagle types.</p>
+          <p> This work is licensed under
+            the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
+              By-SA 3.0
+            </a>, without all the cruft that would otherwise be
+            put at the bottom of the page.</p>
         </div>
       </div>
     </div>
