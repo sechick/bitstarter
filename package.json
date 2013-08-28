@@ -1,5 +1,5 @@
 {
-  "name": "node-js-sample"
+  "name": "node-js-sample",
   "version": "0.0.2",
   "description": "a homework assignment with node.js app for heroku",
   "main": "web.js",
